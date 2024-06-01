@@ -48,6 +48,9 @@ while True:
             # 모든 일치하는 얼굴의 인덱스를 찾은 다음 각 인식된 얼굴에 대한 투표 횟수를 계산하기 위한 사전을 초기화합니다.
             matchedIdxs = [i for (i, b) in enumerate(matches) if b]
             counts = {}
+            
+            print(data['names'])
+            print(matches)
 
             # 일치하는 인덱스를 반복하고 각 인식된 얼굴에 대한 카운트를 유지합니다.
             for i in matchedIdxs:
